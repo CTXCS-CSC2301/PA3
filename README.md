@@ -12,7 +12,7 @@ CSC2301 Programming Assignment 3
 2.  In this assignment you will use conditional execution to modify some code with Branch instuctions.  You should do the following:
   * Start with attached file `PA3-2.s`.  It should build and run correctly.
   * Simplify the logic of the program using conditional execution
-  * Try to eliminate all `BAL` and `BEQ` instructions by using conditional execution of other instructions.  (Note that the `BL` instructions for `printf` and scanf will have to remain.  All other branches should be eliminated.)
+  * Try to eliminate all `BAL` and `BEQ` instructions by using conditional execution of other instructions.  (Note that the `BL` instructions for `printf` and `scanf` will have to remain.  All other branches should be eliminated.)
   * Your code should produce the same output for all inputs as the unmodified program
   * If you are unable to remove the one branch that is used to display the "Illegal selection" message, you will only lose 2 points.  It is possible to eliminate it, but a bit tricky
   * Be sure to check the rubric for how to comment your code.
