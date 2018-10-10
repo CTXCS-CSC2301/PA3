@@ -4,7 +4,6 @@
     .extern printf
 main:
     @@@ Print out "menu" of choices.
-    PUSH {LR}
     LDR R0, =msg0
     BL printf
     LDR R0, =msg1
@@ -61,7 +60,8 @@ _compute:
                       @and put result in R1
     LDR R0, =msg6     @Final message
     BL printf
-    POP {PC}        @Normal exit
+    MOV R7, #0
+    SWI #0        @Normal exit
 
 .data
 select: .word 0
